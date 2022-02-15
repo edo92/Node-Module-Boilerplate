@@ -1,0 +1,27 @@
+{
+    "ts-node": {
+        "require": ["tsconfig-paths/register"]
+    },
+    "extends": "./paths.config.json",
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs",
+        "lib": ["ES2016", "esnext"],
+        "moduleResolution": "node",
+        "allowJs": true,
+        "strict": true,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "allowSyntheticDefaultImports": true,
+        "plugins": [
+            {
+                "afterDeclarations": true,
+                "transform": "typescript-transform-paths"
+            }
+        ]
+    }
+}

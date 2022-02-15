@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "rootDir": ".",
+        "baseUrl": "."
+    },
+    "include": ["./src/**/*", "./test/**/*"],
+    "files": ["./src/types/global.d.ts"]
+}
